@@ -1,0 +1,489 @@
+/*========================*/
+/*                        */
+/*    V-Elektrik Style    */
+/*                        */
+/*========================*/
+
+/*----------*/
+/* All page */
+/*----------*/
+
+/* Override all margin to zero */
+* {
+	margin								: 0;
+}
+
+/* Change font */
+body, div, td, th, option, select, input, textarea {
+	font-family							: tahoma;
+	font-size							: 10pt;
+}
+
+/* Change background page */
+body {
+	background							: #cccccc url(background.png) repeat-x;
+}
+
+/*--------------------*/
+/* Element: Hyperlink */
+/*--------------------*/
+
+/* Hyperlink */
+a {
+	color								: blue;
+}
+
+/* Hyperlink hovered */
+a:hover {
+	text-decoration						: none;
+}
+
+/* Hyperlinked image */
+a img {
+	border								: none;
+}
+
+/*----------------*/
+/* Element: Title */
+/*----------------*/
+
+/* Title */
+h1, h2, h3, h4, h5, h6 {
+	font-family							: georgia;
+	border-bottom						: solid 2px #777777;
+	width								: 640px;
+	padding-bottom						: 1px;
+}
+
+/*----------------*/
+/* Element: Table */
+/*----------------*/
+
+/* Table header */
+th {
+	border								: solid 1px #324c73;
+	background-color					: #c9e0ef;
+}
+
+/* Table cell */
+td {
+	background-color					: #ffffff;
+}
+
+/* Transparent table (Preferrably for form) */
+.transparent th, .transparent td {
+	background-color					: transparent;
+	border								: none;
+}
+
+/* Custom class for table header */
+.tableTitle td {
+	font-size							: 10pt;
+	font-weight							: bold;
+	height								: 50px;
+	color								: #fcfcfc;
+	background-color					: #324c73;
+}
+
+/* Custom class for table cell */
+.tableSubTitle td {
+	font-size							: 10pt;
+	color								: #fcfcfc;
+	background-color					: #324c73;
+}
+
+/*----------------------*/
+/* Element: Div spacing */
+/*----------------------*/
+
+/* Div spacing 5 pixel */
+.spacer5 {
+	height								: 5px;
+}
+
+/* Div spacing 10 pixel */
+.spacer10 {
+	height								: 10px;
+}
+
+/* Div spacing 20 pixel */
+.spacer20 {
+	height								: 20px;
+}
+
+/* Div spacing 30 pixel */
+.spacer30 {
+	height								: 30px;
+}
+
+/* Div spacing 50 pixel */
+.spacer50 {
+	height								: 50px;
+}
+
+/*------------*/
+/* Login page */
+/*------------*/
+
+/* Login page: Body */
+.login-page {
+ 	text-align							: center;
+}
+
+/* Login page: Header */
+.login-page #header {
+	padding-top							: 30px;
+}
+
+/* login page: Content */
+.login-page #content {
+}
+
+/* Login page: Box */
+#login-form {
+	border								: 1px solid;
+	padding								: 1% 0 0 1%;
+	margin								: 50 auto 0;
+	width								: 350px;
+	background							: #fff;
+	/* For mozilla family */
+	-moz-border-radius-topleft			: 20px;
+	-moz-border-radius-topright			: 0px;
+	-moz-border-radius-bottomleft		: 0px;
+	-moz-border-radius-bottomright		: 20px;
+	-moz-box-shadow						: 4px 4px 4px rgba(0,0,0,0.3);
+	/* For chrome family */
+	-webkit-border-top-right-radius		: 0px;
+	-webkit-border-top-left-radius		: 20px;
+	-webkit-border-bottom-left-radius	: 0px;
+	-webkit-border-bottom-right-radius	: 20px;	
+	-webkit-box-shadow					: 4px 4px 4px rgba(0,0,0,0.3);
+	/* For internet explorer family */
+	box-shadow							: 4px 4px 4px rgba(0,0,0,0.3); 
+}
+
+/* Login page: Captcha image */
+#captcha-image {
+	border								: solid #cccccc 2px;
+}
+
+/*-----------*/
+/* Main page */
+/*-----------*/
+
+/*
+Style navigation:
+
+body
+|
++---+> #container
+|   |
+|   +---+> #main .clearFix
+|       |
+|       +----+> #header
+|       |    |
+|       |    +----+> #user-menu
+|       |    |
+|       |    +----+> #logo
+|       |
+|       +----+> #menu
+|       |    |
+|       |    +----+> #app
+|       |    |
+|       |    +----+> #module
+|       |    |
+|       |    +----+> #app-change
+|       |    |    |
+|       |    |    +----+> #app-link
+|       |    |
+|       |    +----+> #module-change
+|       |         |
+|       |         +----+> #module-link
+|       |
+|       +----+> #content
+|       |
+|       +----+> #management (FOR ADMIN)
+|
++---+> #footer
+
+*/
+
+/*-----------------*/
+/* Main: Container */
+/*-----------------*/
+
+/* Height to 100% (For compatibility to sticky footer) */
+html, body, #container {
+	height								: 100%;
+}
+
+/* Height to 100% (For compatibility to sticky footer) */
+body > #container {
+	height								: auto;
+	min-height							: 100%;
+}
+
+/*------------*/
+/* Main: Main */
+/*------------*/
+
+/* Main style */
+#main {
+	padding-bottom						: 50px;
+}
+
+/*-------------------------------------------------*/
+/* Main: Clear Fix (Compatibility to sticky footer */
+/*-------------------------------------------------*/
+
+/* After clear fix rendering */
+.clearfix:after {
+	content								: ".";
+	display								: block;
+	height								: 0;
+	clear								: both;
+	visibility							: hidden;
+}
+
+/* Display clear fix */
+.clearfix  {
+	display								: inline-block;
+}
+
+/* Hides from IE-mac */
+* html .clearfix {
+	height								: 1%;
+}
+
+/* Hides from IE-mac */
+.clearfix {
+	display								: block;
+}
+
+/*--------------*/
+/* Main: Header */
+/*--------------*/
+
+/* Header */
+#header {
+}
+
+/* User menu */
+#header #user-menu {
+	padding-top							: 27px;
+	float								: right;
+	padding-right						: 20px;
+}
+
+/* Small logo */
+#header #logo {
+	width								: 20%;
+}
+
+/*------------*/
+/* Main: Menu */
+/*------------*/
+
+/* Menu */
+#menu {
+	background							: #324c73;	
+	padding								: 10px 30px;
+}
+
+/* Application, and application change */
+#app, #app-change {
+	font-size							: 12pt;
+	float								: left;
+	width								: 40%;
+	color								: #ffffff;
+}
+
+/* Module, and module change */
+#module, #module-change {
+	font-size							: 12pt;
+	color								: #ffffff;
+}
+
+/* Application link, and module link */
+#app-link, #module-link {
+	font-size							: 10pt;
+	color								: #ff9900;
+}
+
+/*---------------*/
+/* Main: SubMenu */
+/*---------------*/
+
+/* SubMenu */
+#subMenu {
+	background-color					: #c9e0ef;
+	padding								: 10px 30px;
+	margin-left							: -10px;
+}
+
+/* SubMenu link */
+#subMenu a {
+	color								: #3f61bc;
+}
+
+/* SubMenu link hovered */
+#subMenu a:hover {
+	color								: #000000;
+}
+
+/*---------------*/
+/* Main: Content */
+/*---------------*/
+
+/* Style content */
+#container #content {
+	padding-left						: 10px;
+}
+
+/*---------------*/
+/* Main: Management */
+/*---------------*/
+
+/* Style management */
+#container #management {
+	padding-left						: 10px;
+}
+
+/*--------------------*/
+/* Main: User profile */
+/*--------------------*/
+
+/* Style content */
+#container #user-profile {
+	padding-left						: 10px;
+}
+
+/*--------------*/
+/* Main: Footer */
+/*--------------*/
+
+/* Style for footer */
+#footer {
+	position							: fixed;
+	left								: 0px;
+	bottom								: 10px;
+	margin-top							: -50px; /* negative value of footer height */
+	height								: 30px;
+	padding								: 7px 0px;
+	clear								: both;
+	text-align							: center;
+	background							: #c9e0ef;
+	margin-bottom						: -10px;
+	width								: 100%;
+}
+
+/*---------------------*/
+/* Others: Div message */
+/*---------------------*/
+
+/* Showing error message (Preferrably div element) */
+.error {
+	padding								: 3px;
+	color								: red;
+	font-weight							: bolder;
+}
+
+/* Showing confirmation message (Preferrably div element) */
+.confirmation {
+	padding								: 3px;
+	color								: blue;
+	font-weight							: bolder;
+}
+
+/*---------------*/
+/* Others: Image */
+/*---------------*/
+
+/* Image in administration menu */
+.imageHrefIcon {
+	padding								: 5px;
+}
+
+/* Image in administration menu (hovered) */
+.imageHrefIcon:hover {
+	background-color					: #cccccc;
+}
+
+/* Image option menu */
+.imageHref {
+}
+
+/* Image option menu (hovered) */
+.imageHref:hover {
+}
+
+/*---------------*/
+/* Others: Title */
+/*---------------*/
+
+/* Title */
+.title {
+	float								: left;
+	clear								: left;
+	font-size							: 14pt;
+	width								: 500px;
+}
+
+/* Subtitle */
+.subTitle {
+	font-size							: 12pt;
+	border-bottom						: solid 2px #000000;
+	width								: 640px;
+}
+
+/* Sub subtitle */
+.subSubTitle {
+	font-size							: 12pt;
+	font-weight							: bold;
+}
+
+/*---------------*/
+/* Others: Display */
+/*---------------*/
+
+/* Display hide */
+.hide {
+	visibility							: hidden;
+	display								: none;
+}
+
+/* Display filter */
+.filter {
+	border								: RGB(75,172,198) solid 1px; 
+	padding								: 10px; 
+	background-color					: RGB(218, 238, 243); 
+	margin-top							: 2px;
+	margin-bottom						: 2px;
+}
+
+/*-------------*/
+/* Recycle Bin */
+/* --Backup--- */
+/*-------------*/
+
+/*
+.submodule {
+	background							: #993333;
+	padding								: 10px;
+}
+
+#tabs {
+	width								: 400px;
+}
+
+.popup {
+	border								: solid RGB(172, 75, 198) 2px;
+	background-color					: #f3f3f3;
+	visibility							: hidden;
+	position							: absolute;
+	top									: 0;
+	left								: 0;
+	padding								: 4px;
+}
+
+*/
